@@ -36,35 +36,6 @@ Improve data consistency
 Eliminate manual file searching
 Provide a simple search interface for member lookup
 
-┌──────────────────────┐
-│ SharePoint Data Files│
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Fabric Data Pipeline │
-│ Data Extraction      │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Data Transformation  │
-│ • Column Standardization
-│ • Data Cleansing
-│ • Data Validation
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Fabric Warehouse     │
-│ Centralized Dataset  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Power BI Dashboard   │
-│ Member Search Portal │
-└──────────────────────┘
 <img width="1693" height="929" alt="image" src="https://github.com/user-attachments/assets/1c4a3b2c-9550-4b07-b45c-50ae8ccf8327" />
 
 Key Features
@@ -73,12 +44,16 @@ Extracts member data from SharePoint files.
 Combines records into a centralized Fabric Warehouse.
 Maintains a single source of truth for member information.
 
+
+
 Data Transformation
 Basic transformations performed during ingestion include:
 Column renaming and standardization
 Data type conversions
 Data quality checks
 Removal of unnecessary fields
+
+
 
 Member Search Dashboard
 The Power BI report enables users to:
@@ -87,13 +62,17 @@ Search members using SSNIT Number
 View member details instantly
 Access a centralized view of records
 
+
+
 **Technology Stack**
 Technology	Purpose
-Microsoft Fabric	-- Data Platform
-Fabric Data Pipeline	-- Data Ingestion
-Fabric Warehouse	-- Centralized Storage
-SharePoint	-- Source Data Repository
+Microsoft Fabric	-- Data Platform,
+Fabric Data Pipeline	-- Data Ingestion,
+Fabric Warehouse	-- Centralized Storage,
+SharePoint	-- Source Data Repository,
 Power BI	-- Reporting & Search Interface
+
+
 
 **Project Workflow**
 Member data files are maintained in SharePoint.
@@ -116,3 +95,9 @@ Reduced time spent searching through files
 Improved data accessibility
 Better reporting and operational efficiency
 Scalable Microsoft Fabric-based architecture
+
+<img width="1316" height="731" alt="image" src="https://github.com/user-attachments/assets/74e3407b-85b2-4387-9afb-7d17449bc69f" />
+
+<img width="868" height="696" alt="image" src="https://github.com/user-attachments/assets/a974a707-c44a-43d7-a136-872894a8a927" />
+
+
